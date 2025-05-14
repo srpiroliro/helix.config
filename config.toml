@@ -1,0 +1,51 @@
+theme = "carbonfox"
+
+[editor]
+bufferline = "always"
+true-color = true
+gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
+cursorline = true
+line-number = "relative"
+
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert="bar"
+normal="block"
+select="underline"
+
+[editor.statusline]
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
+left = ["mode", "separator", "file-name", "file-modification-indicator"]
+center = ["spinner"]
+right = ["position-percentage", "spacer", "workspace-diagnostics", "diagnostics",  "separator", "spacer", "version-control", "spacer"]
+separator = "/"
+
+
+[editor.file-picker]
+# hidden = true
+
+[keys.normal]
+C-s = ":w"
+Cmd-s = ":w"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
+[editor.whitespace.render]
+tab = "all"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
