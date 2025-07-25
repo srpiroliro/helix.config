@@ -35,6 +35,11 @@ git-global = false
 C-s = ":w"
 Cmd-s = ":w"
 
+[keys.insert]
+C-s = ":w"
+Cmd-s = ":w"
+# C-q = ":"
+
 [editor.lsp]
 display-inlay-hints = true
 
