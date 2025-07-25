@@ -1,4 +1,4 @@
-theme = "carbonfox"
+theme = "ayu_dark"
 
 [editor]
 bufferline = "always"
@@ -27,7 +27,9 @@ separator = "/"
 
 
 [editor.file-picker]
-# hidden = true
+hidden = false
+ignore = false
+git-global = false
 
 [keys.normal]
 C-s = ":w"
@@ -35,6 +37,10 @@ Cmd-s = ":w"
 
 [editor.lsp]
 display-inlay-hints = true
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "error"
 
 [editor.indent-guides]
 render = true
